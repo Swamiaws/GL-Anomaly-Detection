@@ -1,16 +1,11 @@
-# Please add file name in 74th and 50th line
 
 import os
-from dotenv import load_dotenv
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 from langchain_groq import ChatGroq
 from langchain_experimental.agents.agent_toolkits import create_pandas_dataframe_agent
 from langchain.memory import ConversationSummaryBufferMemory
-
-# Load environment variables
-load_dotenv()
 
 # Function to initialize session state
 def init_state():
