@@ -1,4 +1,3 @@
-
 import os
 import streamlit as st
 import pandas as pd
@@ -23,7 +22,7 @@ def select_llm_model(model_name, temperature):
         "Mixtral-8x7b-32768": "mixtral-8x7b-32768"
     }
     selected_model = model_mapping.get(model_name)
-    groq_api = st.secrets('GROQ_API_KEY')
+    groq_api = st.secrets['GROQ_API_KEY']
     if not groq_api:
         raise ValueError("GROQ_API_KEY environment variable is not set.")
     llm = ChatGroq(temperature=temperature, model=selected_model, api_key=groq_api)
