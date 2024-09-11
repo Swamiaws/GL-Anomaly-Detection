@@ -1,0 +1,8 @@
+pandas
+numpy
+sklearn
+scipy
+langchain-groq
+langchain-experimental
+tabulate
+matplotlib
